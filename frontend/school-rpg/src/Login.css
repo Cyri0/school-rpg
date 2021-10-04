@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+.login{
+    max-width: 300px;
+    font-family: 'VT323', monospace;
+    width: 90%;
+    position: absolute;
+    top: 40%;
+    left: 50%;transform: translate(-50%, -50%);
+    padding: 30px;
+}
+
+.login h1{
+    font-size: 8rem;
+    color: rgb(255, 255, 255);
+    font-weight: normal;
+    margin-bottom: 20;
+    line-height: 0.8;
+}
+
+.login label{
+    font-size: 2rem !important;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+
+.login input[type="text"]{
+    display: block;
+    width: 100%;
+    height: 3rem;
+    border: 5px solid black;
+    border-radius: 5px;
+    font-size: 2rem;
+    font-family: 'VT323', monospace;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.login input[type="submit"]{
+    margin-top: 20px;
+    font-family: 'VT323', monospace;
+    font-size: 2.5rem;
+    padding: 10px 20px;
+    background-color: rgba(173, 216, 230, 0.589);
+    border: 5px solid black;
+    margin-right: -12px;
+    font-weight: bold;
+    transition: 1s;
+    float: right;
+}
+
+.login input[type="submit"]:hover{
+    cursor: pointer;
+    background-color: rgba(173, 216, 230, 0.8);
+}
+
+.error_msg{
+    color: rgb(255, 106, 106);
+    font-size: 1.2rem;
+    background-color: black;
+    padding: 5px;
+    display: none;
+}
