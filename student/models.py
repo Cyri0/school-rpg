@@ -11,6 +11,7 @@ class Group(models.Model):
 
     def serialize(self):
         return {
+            "group_id":self.id,
             "class": self.schoolclass,
             "lesson": self.lesson_name,
             "time": self.time

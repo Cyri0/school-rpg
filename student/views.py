@@ -10,11 +10,24 @@ def commands(request):
 
     return JsonResponse(commands)
 
-def student(request):
+def students(request):
     data = {'students':[]}
     students = Student.objects.all()
 
     for student in students:
         data['students'].append(student.serialize())
+
+    return JsonResponse(data)
+
+def student(request, id):
+    student = Student.objects.get(id = id)
+    return JsonResponse(student.serialize())
+
+def groups(request):
+    data = {'groups':[]}
+    groups = Group.objects.all()
+
+    for group in groups:
+        data['groups'].append(group.serialize())
 
     return JsonResponse(data)
