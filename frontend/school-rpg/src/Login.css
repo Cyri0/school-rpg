@@ -52,11 +52,3 @@
     cursor: pointer;
     background-color: rgba(173, 216, 230, 0.8);
 }
-
-.error_msg{
-    color: rgb(255, 106, 106);
-    font-size: 1.2rem;
-    background-color: black;
-    padding: 5px;
-    display: none;
-}

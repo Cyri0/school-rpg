@@ -23,7 +23,9 @@ class Login extends React.Component {
   }
 
   handleSubmit(event){
-    alert(`Felhasználónév: ${this.state.username}\nJelszó: ${this.state.password}`);
+    if(this.state.password.length != 0 && this.state.username.length != 0){
+      alert(`Felhasználónév: ${this.state.username}\nJelszó: ${this.state.password}`);
+    }
   }
 
   render() {
@@ -33,11 +35,12 @@ class Login extends React.Component {
         <form onSubmit={this.handleSubmit}>
           <label>Felhasználónév</label>
           <input type="text" value={this.state.username} onChange={this.handleUnameChange} />
-          <p className="error_msg">Hiányzó felhasználónév!</p>
           <label>Jelszó</label>
           <input type="text" value={this.state.password} onChange={this.handlePWDChange} />
-          <p className="error_msg">Hiányzó jelszó!</p>
-          <input type="submit" value="Login"/>
+          <input 
+            type="submit" 
+            value="Login"
+            disabled={ this.state.password.length === 0 || this.state.username.length === 0 }/>
         </form>
       </div>
     );
