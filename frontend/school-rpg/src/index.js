@@ -1,14 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
-import background from './background.png';
-import Login from './Login';
+
+// import Login from './LoginPage/Login';
+import Profile from './ProfilePage/Profile'
+import Navbar from './Navbar/Navbar'
 
 ReactDOM.render(
   <React.StrictMode>
-    <img src={background} alt="Background" className="background-image"/>
-    <Login />
+    
+    {/* <Login /> */}
+    <div>
+      <Navbar/>
+      <Profile/>
+    </div>
   </React.StrictMode>,
   document.getElementById('root')
 );
-

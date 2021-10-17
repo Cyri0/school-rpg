@@ -12,7 +12,7 @@
 
 .login h1{
     font-size: 8rem;
-    color: rgb(255, 255, 255);
+    color: rgba(0, 0, 0, 0.8);
     font-weight: normal;
     margin-bottom: 20;
     line-height: 0.8;
@@ -22,6 +22,8 @@
     font-size: 2rem !important;
     font-weight: bold;
     color: rgb(255, 255, 255);
+    text-shadow: 3px 3px #000000;
+    padding: 5px 10px;
 }
 
 .login input[type="text"], .login input[type="password"]{
@@ -32,6 +34,7 @@
     border-radius: 5px;
     font-size: 2rem;
     font-family: 'VT323', monospace;
+    padding: 10px 20px;
     background-color: rgba(255, 255, 255, 0.6);
 }
 
