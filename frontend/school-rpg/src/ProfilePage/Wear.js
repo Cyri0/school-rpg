@@ -19,6 +19,8 @@ class Wear extends Component {
   }
   render() {
     return (
+      <div>
+      <h1>Felszerelés</h1>
       <div className="layout wrap">
         <Slot data={this.state.wear.head} />
 
@@ -30,6 +32,7 @@ class Wear extends Component {
         <Slot data={this.state.wear.jew1} />
         <Slot data={this.state.wear.jew2} />
         <Slot data={this.state.wear.rune} />
+      </div>
       </div>
     );
   }
@@ -47,7 +50,7 @@ class Slot extends Component {
     return (
       <div className={"slot " + this.state.className}>
         <span>{this.props.data.name}</span>
-        <img src={this.props.data.img} />
+        <img src={this.props.data.img} alt={this.props.data.name}/>
       </div>
     );
   }
